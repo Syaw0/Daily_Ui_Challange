@@ -10,40 +10,71 @@
     <div id="root">
 
       <div id="picture-template">
+          <a href="../indexPage/IndexPage.html" id="togglepage">back</a>
+          <div id="pageheaderholder">
+            <h1 id="pageheader"> Geek World</h1>
+            <h6 id="pageheader2">Dev heaven</h6>
+          </div>
+          
           <img id="picture-template-img" src="./images/choosedpic1.jpg"/>
       </div>
 
       <div id="form-template">
 
           
+            <section class="form-template-start" id="pre-form">
+                
+                <footer class="form-template-start-footer" >
+                    <button id="s-login">Login</button>
+                <button id="s-signup">Sign up</button>
+                </footer>
+            </section>  
 
-          <main class="form-template-main">
+
+          <main class="form-template-main" id="mainform">
 
             <header class="form-template-main-header">
-                <h1>Geeks world</h1>
-                <h4> hello friend<br />create an new account</h4>
+                
+                
             </header>
 
-              <form class="form-template-main-form">
+              <form class="form-template-main-form" id="Sign-up">
                   <h3>Sign up</h3>
-                
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Email" />
-                
-                <input type="password" placeholder="password" />
+                <label for="name">Your Name</label>
+                <input type="text" placeholder="l.k:john"  id="name"/>
+                <label for="mail">Email</label>
+                <input type="text" placeholder="example@gmail.com" id="mail"/>
+                <label for="pass">Password</label>
+                <input type="password" placeholder="password" id="pass"/>
                 <footer class="form-template-main-form-footer">
                     <button>Sign up</button>
-                    <a href="#">already <br/>has account?</a>
+                    
+                    <a id="toggletoL">already <br />has account?</a>
                 </footer>
                 
-                <!-- <input type="text" placeholder="Email" />                
-                <input type="text" placeholder="password" />
-                <button>Sign in</button> -->
-              </form>
 
-            <footer class="form-template-main-footer">
-                <h3>this is footer</h3>
-            </footer>
+              </form>
+            <form class="form-template-main-form" id="login-form">
+                <h3>Login</h3>
+                <label for="name1">usename or Email</label>
+                <input type="text" id="name1" />
+                <label for="pass1">Password</label>
+                <input type="password" id="pass1" />
+                <footer class="form-template-main-form-footer">
+                    <button>Login</button>
+                    <a id="toggletoS">create account!</a>
+                    
+                </footer>
+            
+            
+            </form>
+
+            <!-- <footer class="form-template-main-footer">
+                
+                    <a>google</a>
+                    <a>facebook</a>
+                
+            </footer> -->
           </main>
 
           
@@ -53,3 +84,6 @@
     <script type="module" src="./scripts/script.js"></script>
   </body>
 </html>
+                <!-- <input type="text" placeholder="Email" />                
+                                <input type="text" placeholder="password" />
+                                <button>Sign in</button> -->
